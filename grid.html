@@ -26,6 +26,27 @@
         background-color: red;
         grid-column: -2/-3;
     }
+    @keyframes myanimation{
+        0%{
+            transform:translateX(-100%);
+            rotate:90deg;
+            scale:0%
+        }
+        50%
+        {
+            transform: translateX(0%);
+            scale:50%;
+            rotate: 180deg;
+        }
+        100%{
+            transform: translateX(100%);
+            scale: 100%;
+            rotate:360deg;
+        }
+    }
+        .red{
+            animation:2s myanimation ease-in;
+        }
 </style>
 <body>
         <div class="container">
