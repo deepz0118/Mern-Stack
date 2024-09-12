@@ -9,37 +9,33 @@
         * {
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
         body {
-            width: 100vw;
-            background-color: #f5f5f5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            /* dd */
+        
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
         }
         .section1 {
             width: 70%;
             height: 12rem;
-            background: #EB5757;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-box-shadow:
-  3.4px 3.4px 2.7px rgba(0, 0, 0, 0.022),
-  8.7px 8.7px 6.9px rgba(0, 0, 0, 0.031),
-  17.7px 17.7px 14.2px rgba(0, 0, 0, 0.039),
-  36.5px 36.5px 29.2px rgba(0, 0, 0, 0.048),
-  100px 100px 80px rgba(0, 0, 0, 0.07)
-;
-
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             color: white;
-        }
+            background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+
+}
         .profile-img-section {
             width: 40%;
             height: 100%;
@@ -64,52 +60,58 @@ box-shadow:
 
         .section2 {
             width: 70%;
-            height: 12rem;
-            border: 1px solid sienna;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            font-size: 150%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    padding: 10px;
+    font-weight: 500;
+    font-size: large;
         }
-
-
-        .section3 {
-            width: 70%;
-            height: 20rem;
-            /* background-color: aquamarine; */
-            border: 1px solid sienna;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            font-size: 150%;
-            /* padding: 10px; */
-        }
-
-
-        .section4 {
-            width: 70%;
-            height: 15rem;
-            /* background-color: aquamarine; */
-            border: 1px solid sienna;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            font-size: 150%;
-            /* padding: 10px; */
-        }
+    .section3 {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: large;
+    
+}
+        
+    .section4 {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: large;
+    
+}
+        
         .section5 {
             width: 70%;
-            height: 15rem;
-            /* background-color: aquamarine; */
-            border: 1px solid sienna;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            font-size: 150%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: large;
+        }
+        .section6 {
+            width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: large;
         }
         li{
             list-style: square;
@@ -122,10 +124,8 @@ box-shadow:
             /* color: sienna; */
             font-weight: bold;
         }
-
-
         .ed-table {
-            width: 75%;
+            width: 55%;
             border: 1px solid gray;
             border-collapse: collapse;
             margin-left: auto;
@@ -146,9 +146,9 @@ box-shadow:
             /* color: sienna; */
         }
         .color-prim{
-            color:#9f3b3b;
+            color:#6a3093;
         }
-        .section6 {
+        .section7 {
             width: 70%;
             height: 2rem;
             display: flex;
@@ -157,10 +157,15 @@ box-shadow:
             align-items: center;
             gap: 3rem;
             font-weight: bold;
-
-            background: #EB5757;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    color: wheat;
+}
         }
     </style>
 </head>
@@ -172,17 +177,17 @@ background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, F
         </div>
     </div>
         <div class="profile-data">
-            <h1>Jimmy </h1>
-            <h5>jimmy@gmail.com</h5>
+            <h1>Deepika P </h1>
+            <h5>deepikap22cys@srishakthi.ac.in</h5>
         </div>
     </div>
     <div class="section2">
         <h1 class="section-title color-prim">
             Objective
         </h1>
-        <p>
-            The way a healthy dog behaves is individual and depends on its age, breed or type and past experience. However, most dogs are playful, sociable animals and they enjoy playing together with toys, people and other dogs.
-        </p>
+        <p> As a dedicated cyber security student at Sri Shakthi institute of engineering and technology.Passionate professional with a strong dedication to excellence and a keen interest in embracing technologies.
+            Qucik leaner and adaptable team player.Eager to contribute enthusiasm and expertise to dynamic team.
+            </p>
     </div>
     <div class="section3">
        <h1 class="section-title color-prim">
@@ -195,40 +200,56 @@ background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, F
             <th>Score Percentage</th>
         </tr>
         <tr>
-            <th>Degree 1</th>
-            <th>Campus 1</th>
-            <th>90%</th>
+            <th>SSLC</th>
+            <th>BMS</th>
+            <th>98%</th>
         </tr>
         <tr>
-            <th>Degree 2</th>
-            <th>Campus 2</th>
-            <th>89%</th>
+            <th>HSC</th>
+            <th>BMS</th>
+            <th>87%</th>
+        </tr>
+        <tr></tr>
+            <th>UG</th>
+            <th>SIET</th>
+            <th>8.6 CGPE</th>
         </tr>
        </table>
     </div>
     <div class="section4">
   <h1 class="section-title color-prim">
-    Intership
-  </h1><br>
+    Certificate
+  </h1>
   <p>
-    <span class="companies">Cognifyz Technologies</span> April 2024
+    <span class="companies">GOOGLE</span> Introduction to Cyber Security
     </p>
     <p>
-    <span class="companies">Codeaplpa</span> June 2024
+    <span class="companies">GOOGLE</span> Risk and Play management security
   </p>
-
+  </div>
+  <div class="section5">
+    <h1 class="section-title color-prim">
+      Intership
+    </h1>
+    <p>
+      <span class="companies">Cognifyz Technologies</span> Frontend Development Intern
+      </p>
+      <p>
+      <span clcompanies">Codealpha</b> Cyber Security Intern
+    </p>
     </div>
-    <div class="section5">
+    <div class="section6">
         <h1 class="section-title color-prim">
             Skills
           </h1><br>
           <ul>
             <li>Cyber Security</li>
-            <li>Full Stack</li>
-            <li>Ethical Hacking</li>
+            <li>Web Development </li>
+            <li>Pentesting</li>
           </ul>
     </div>
-<div class="section6">
+    
+<div class="section7">
     <a href="tel:+9159900907">
         <i class="fa-solid fa-phone text-white"></i>
     </a>
