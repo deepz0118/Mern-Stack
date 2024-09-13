@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 10px;
+            padding: 10px;
+        }
+        body{
+            width: 70%;
+            height: 50%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-top: 7%;
+         margin-left: 15%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: palevioletred;
+        }
+       
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" onsubmit="formdata()">
+            <input type="text" name="" id="name" placeholder="Name" /><br>
+            <input type="email" name="" id="email" placeholder="Email" /><br>
+            <input type="number" name="" id="number" placeholder="Phone" /><br>
+            <input type="password" name="" id="password" placeholder="Password" /><br>
+            <input type="submit" value="Register" class="submit-btn" />
+        </form>
+    </div>
+</body>
+<script>
+    let name=document.getElementById("name").value
+    let email=document.getElementById("email")
+    let number=document.getElementById("number")
+    let password=document.getElementById("password")
+    function formdata()
+    {
+        console.log(name)
+    }
+</script>
+</html>

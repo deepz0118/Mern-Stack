@@ -15,7 +15,7 @@
     .blue{
         background-color: blue;
         grid-row:2/3;
-        grid-column: -3/-2;
+        grid-column: 1/2;
     }
     .purple{
         background-color: purple;
@@ -42,10 +42,18 @@
             transform: translateX(100%);
             scale: 100%;
             rotate:360deg;
+            opacity: 1;
         }
     }
-        .red{
+       /* .red{
             animation:2s myanimation ease-in;
+        }*/
+        .emoji{
+            animation: myanimation ease-out;
+        }
+        .red:hover{
+            background-color: orange;
+            transition: 0.6s background-color ease-in;
         }
 </style>
 <body>
@@ -53,6 +61,9 @@
             <div class="box red">R</div>
             <div class="box blue">B</div>
             <div class="box purple">P</div>
+            <div class="emoji">
+                <h1>&#128513;</h1>
+            </div>
         </div>
 </body>
 </html>
