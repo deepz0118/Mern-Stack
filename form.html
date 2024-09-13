@@ -44,16 +44,28 @@
     let number=document.getElementById("number").value
     let password=document.getElementById("password").value
     let age=document.getElementById("age").value
-        console.log(name)
+       // console.log(name)
+        if(name!=="" && email!=="" && number!==0 && age!==0 && password!==""){
+            if(name==="Deepika"){
+                alert("User Not match")
+            }
+            else{
+                console.log("Success")
+            }
+        }
+        else{
+             console.log("Empty Fields")
+        }
+
    const data={
     username:name,
     useremail:email,
     userphone:number,
     userpassword:password,
-    userage:age
+    usertype: age>=18?'Major':'Minor'
    }
-   const{username,useremail,userphone,userpassword,userage}=data
-   console.log(userage);
+   const{username,useremail,userphone,userpassword,usertype}=data
+   console.log(username,usertype);
 }
     let data1=[1,2,3]
     let data2=['a','b','c']
