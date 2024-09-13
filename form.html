@@ -43,6 +43,18 @@
     let number=document.getElementById("number").value
     let password=document.getElementById("password").value
         console.log(name)
-    }
+   const data={
+    username:name,
+    useremail:email,
+    userphone:number,
+    userpassword:password
+   }
+   const{username,useremail,userphone,userpassword}=data
+   console.log(useremail);
+}
+    let data1=[1,2,3]
+    let data2=['a','b','c']
+    let data3=[...data1,false,...data2]
+    console.log(data3)
 </script>
 </html>
