@@ -31,6 +31,7 @@
             <input type="email" name="" id="email" placeholder="Email" /><br>
             <input type="number" name="" id="number" placeholder="Phone" /><br>
             <input type="password" name="" id="password" placeholder="Password" /><br>
+            <input type="age" name="" id="age" placeholder="age"/><br>
             <input type="submit" value="Register" class="submit-btn" />
         </form>
     </div>
@@ -42,15 +43,17 @@
     let email=document.getElementById("email").value
     let number=document.getElementById("number").value
     let password=document.getElementById("password").value
+    let age=document.getElementById("age").value
         console.log(name)
    const data={
     username:name,
     useremail:email,
     userphone:number,
-    userpassword:password
+    userpassword:password,
+    userage:age
    }
-   const{username,useremail,userphone,userpassword}=data
-   console.log(useremail);
+   const{username,useremail,userphone,userpassword,userage}=data
+   console.log(userage);
 }
     let data1=[1,2,3]
     let data2=['a','b','c']
