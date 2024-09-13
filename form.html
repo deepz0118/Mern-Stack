@@ -26,7 +26,7 @@
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form" onsubmit="formdata()">
+        <form class="login-form" onsubmit="formdata(event)">
             <input type="text" name="" id="name" placeholder="Name" /><br>
             <input type="email" name="" id="email" placeholder="Email" /><br>
             <input type="number" name="" id="number" placeholder="Phone" /><br>
@@ -36,13 +36,12 @@
     </div>
 </body>
 <script>
-    
+    function formdata(e){
+        e.preventDefault();
     let name=document.getElementById("name").value
-    let email=document.getElementById("email")
-    let number=document.getElementById("number")
-    let password=document.getElementById("password")
-    function formdata()
-    {
+    let email=document.getElementById("email").value
+    let number=document.getElementById("number").value
+    let password=document.getElementById("password").value
         console.log(name)
     }
 </script>
