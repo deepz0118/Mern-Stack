@@ -131,7 +131,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-
+        
 
         th,
         td {
@@ -155,7 +155,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 3rem;
+            gap: 2rem;
             font-weight: bold;
             background: #6a3093;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
@@ -166,7 +166,43 @@
     border-radius: 10px;
     color: wheat;
 }
-        }
+.icon{
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.icon:hover{
+    scale: 1.2;
+    color: black;
+}
+.icon:before{
+    position: relative;
+    width: 130%;
+    height: 130%;
+    left: -110%;
+    top: 80%;
+    transform: rotate(45deg);
+}
+.icon:hover:before{
+    animation: slide 0.7 forwards;
+}
+@keyframes slide{
+    50%{
+        left:10%;
+        top:-40%
+    }
+    100%{
+        left:-15%;
+        top:-15%;
+    }
+}
+   }
     </style>
     <link
     rel="stylesheet"
@@ -257,13 +293,13 @@
     </div>
     
 <div class="section7">
-    <a href="tel:+9159900907">
+    <a href="tel:+9159900907" class="icon">
         <i class="fa-solid fa-phone text-white"></i>
     </a>
-    <a href="mailto:deepikap22cys@srishakthi.ac.in">
+    <a href="mailto:deepikap22cys@srishakthi.ac.in" class="icon">
         <i class="fa-solid fa-envelope text-white"></i>
     </a>
-    <a href="https://www.linkedin.com/" target="_blank">
+    <a href="https://www.linkedin.com/" target="_blank" class="icon">
         <i class="fa-brands fa-linkedin-in text-white"></i>
     </a>
 </div>
