@@ -1,4 +1,4 @@
-function success()
+/*function success()
 {
     console.log("Success")
 }
@@ -15,7 +15,6 @@ function exec(data,callback)
     console.log('balance : ${data}');
 }
 setTimeout(callback,3000)
-}
 function trigger()
 {
     const data=1
@@ -27,6 +26,15 @@ function trigger()
         exec(data,fail)
     }
     else{
-        exec
+        exec(fail)
     }
+}*/
+//trigger()
+async function API()
+{
+    const response=await fetch("https://mockapi.io/clone/66e526f85cc7f9b6273c6caf")
+    const data=response.json()
+    return data;
 }
+API()
+const Apidata=API()
