@@ -30,11 +30,11 @@ function trigger()
     }
 }
 trigger()
-/*async function API()
+async function API()
 {
     const response=await fetch("https://mockapi.io/clone/66e526f85cc7f9b6273c6caf")
     const data=response.json()
     return data;
 }
 API()
-const Apidata=API()*/
+const Apidata=API()
